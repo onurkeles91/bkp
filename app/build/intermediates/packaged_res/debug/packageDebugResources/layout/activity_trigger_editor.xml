@@ -1,0 +1,126 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Geri"/>
+
+        <TextView
+            android:id="@+id/tvTrigHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trigger Editor"
+            android:textSize="18sp"
+            android:paddingTop="8dp"/>
+
+        <Button
+            android:id="@+id/btnRename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Adını değiştir"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Boyut (px)"/>
+
+        <SeekBar
+            android:id="@+id/sbSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="400"
+            android:progress="120"/>
+
+        <TextView
+            android:id="@+id/tvSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Boyut: 120px"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Opaklık (%)"/>
+
+        <SeekBar
+            android:id="@+id/sbOpacity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="40"/>
+
+        <TextView
+            android:id="@+id/tvOpacity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Opaklık: 40%"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Mod"/>
+
+        <RadioGroup
+            android:id="@+id/rgMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rbModeOnce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bir kere (Once)"/>
+
+            <RadioButton
+                android:id="@+id/rbModeHold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Basılı tut (Hold)"/>
+
+            <RadioButton
+                android:id="@+id/rbModeToggle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aç / Kapat (Toggle)"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="14dp"
+            android:text="İşlemler (tıklanacak noktalar)"/>
+
+        <Button
+            android:id="@+id/btnAddAction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yeni nokta ekle (ekrandan seç)"/>
+
+        <ListView
+            android:id="@+id/lvActions"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kaydet"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+</ScrollView>

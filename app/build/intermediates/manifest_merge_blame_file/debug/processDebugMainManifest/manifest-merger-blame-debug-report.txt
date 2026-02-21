@@ -1,0 +1,129 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.bestkoplayer"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+11-->C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\src\main\AndroidManifest.xml:6:5-78
+11-->C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\src\main\AndroidManifest.xml:6:22-75
+12
+13    <!-- Needed on Android 11+ so the target-app picker can list other installed apps (e.g., games). -->
+14    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+14-->C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\src\main\AndroidManifest.xml:9:5-11:53
+14-->C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\src\main\AndroidManifest.xml:10:9-61
+15
+16    <!-- Additional package visibility declaration (helps on some ROMs even with QUERY_ALL_PACKAGES). -->
+17    <queries>
+17-->C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\src\main\AndroidManifest.xml:14:5-19:15
+18        <intent>
+18-->C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\src\main\AndroidManifest.xml:15:9-18:18
+19            <action android:name="android.intent.action.MAIN" />
+19-->C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\src\main\AndroidManifest.xml:16:13-65
+19-->C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\src\main\AndroidManifest.xml:16:21-62
+20
+21            <category android:name="android.intent.category.LAUNCHER" />
+21-->C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\src\main\AndroidManifest.xml:17:13-73
+21-->C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\src\main\AndroidManifest.xml:17:23-70
+22        </intent>
+23    </queries>
+24
+25    <application
+25-->C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\src\main\AndroidManifest.xml:21:5-65:19
+26        android:allowBackup="true"
+26-->C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\src\main\AndroidManifest.xml:22:9-35
+27        android:debuggable="true"
+28        android:extractNativeLibs="false"
+29        android:label="BestKoPlayer"
+29-->C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\src\main\AndroidManifest.xml:23:9-37
+30        android:theme="@android:style/Theme.DeviceDefault.NoActionBar" >
+30-->C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\src\main\AndroidManifest.xml:24:9-71
+31        <activity
+31-->C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\src\main\AndroidManifest.xml:26:9-33:20
+32            android:name="com.bestkoplayer.ui.ProfilesActivity"
+32-->C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\src\main\AndroidManifest.xml:27:13-48
+33            android:exported="true" >
+33-->C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\src\main\AndroidManifest.xml:28:13-36
+34            <intent-filter>
+34-->C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\src\main\AndroidManifest.xml:29:13-32:29
+35                <action android:name="android.intent.action.MAIN" />
+35-->C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\src\main\AndroidManifest.xml:16:13-65
+35-->C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\src\main\AndroidManifest.xml:16:21-62
+36
+37                <category android:name="android.intent.category.LAUNCHER" />
+37-->C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\src\main\AndroidManifest.xml:17:13-73
+37-->C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\src\main\AndroidManifest.xml:17:23-70
+38            </intent-filter>
+39        </activity>
+40        <activity
+40-->C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\src\main\AndroidManifest.xml:35:17-89
+41            android:name="com.bestkoplayer.ui.TriggersActivity"
+41-->C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\src\main\AndroidManifest.xml:35:27-62
+42            android:exported="false" />
+42-->C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\src\main\AndroidManifest.xml:35:63-87
+43        <activity
+43-->C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\src\main\AndroidManifest.xml:37:9-86
+44            android:name="com.bestkoplayer.ui.TriggerEditorActivity"
+44-->C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\src\main\AndroidManifest.xml:37:19-59
+45            android:exported="false" />
+45-->C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\src\main\AndroidManifest.xml:37:60-84
+46        <activity
+46-->C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\src\main\AndroidManifest.xml:39:9-83
+47            android:name="com.bestkoplayer.ui.NewTriggerActivity"
+47-->C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\src\main\AndroidManifest.xml:39:19-56
+48            android:exported="false" />
+48-->C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\src\main\AndroidManifest.xml:39:57-81
+49        <activity
+49-->C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\src\main\AndroidManifest.xml:41:9-88
+50            android:name="com.bestkoplayer.ui.TargetAppPickerActivity"
+50-->C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\src\main\AndroidManifest.xml:41:19-61
+51            android:exported="false" />
+51-->C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\src\main\AndroidManifest.xml:41:62-86
+52        <activity
+52-->C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\src\main\AndroidManifest.xml:43:9-81
+53            android:name="com.bestkoplayer.ui.OcrRulesActivity"
+53-->C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\src\main\AndroidManifest.xml:43:19-54
+54            android:exported="false" />
+54-->C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\src\main\AndroidManifest.xml:43:55-79
+55        <activity
+55-->C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\src\main\AndroidManifest.xml:45:9-86
+56            android:name="com.bestkoplayer.ui.OcrRuleEditorActivity"
+56-->C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\src\main\AndroidManifest.xml:45:19-59
+57            android:exported="false" />
+57-->C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\src\main\AndroidManifest.xml:45:60-84
+58
+59        <service
+59-->C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\src\main\AndroidManifest.xml:47:1-59:19
+60            android:name="com.bestkoplayer.BestKoAccessibilityService"
+60-->C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\src\main\AndroidManifest.xml:48:13-55
+61            android:exported="true"
+61-->C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\src\main\AndroidManifest.xml:50:13-36
+62            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+62-->C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\src\main\AndroidManifest.xml:49:13-79
+63            <intent-filter>
+63-->C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\src\main\AndroidManifest.xml:52:13-54:29
+64                <action android:name="android.accessibilityservice.AccessibilityService" />
+64-->C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\src\main\AndroidManifest.xml:53:17-91
+64-->C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\src\main\AndroidManifest.xml:53:25-89
+65            </intent-filter>
+66
+67            <meta-data
+67-->C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\src\main\AndroidManifest.xml:56:13-58:63
+68                android:name="android.accessibilityservice"
+68-->C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\src\main\AndroidManifest.xml:57:17-60
+69                android:resource="@xml/accessibility_config" />
+69-->C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\src\main\AndroidManifest.xml:58:17-61
+70        </service>
+71        <service
+71-->C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\src\main\AndroidManifest.xml:61:9-63:40
+72            android:name="com.bestkoplayer.overlay.TriggerOverlayService"
+72-->C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\src\main\AndroidManifest.xml:62:13-58
+73            android:exported="false" />
+73-->C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\src\main\AndroidManifest.xml:63:13-37
+74    </application>
+75
+76</manifest>

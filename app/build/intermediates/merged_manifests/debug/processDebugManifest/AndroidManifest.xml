@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bestkoplayer"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="24"
+        android:targetSdkVersion="34" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!-- Needed on Android 11+ so the target-app picker can list other installed apps (e.g., games). -->
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+
+    <!-- Additional package visibility declaration (helps on some ROMs even with QUERY_ALL_PACKAGES). -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent>
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:extractNativeLibs="false"
+        android:label="BestKoPlayer"
+        android:theme="@android:style/Theme.DeviceDefault.NoActionBar" >
+        <activity
+            android:name="com.bestkoplayer.ui.ProfilesActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.bestkoplayer.ui.TriggersActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.bestkoplayer.ui.TriggerEditorActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.bestkoplayer.ui.NewTriggerActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.bestkoplayer.ui.TargetAppPickerActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.bestkoplayer.ui.OcrRulesActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.bestkoplayer.ui.OcrRuleEditorActivity"
+            android:exported="false" />
+
+        <service
+            android:name="com.bestkoplayer.BestKoAccessibilityService"
+            android:exported="true"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_config" />
+        </service>
+        <service
+            android:name="com.bestkoplayer.overlay.TriggerOverlayService"
+            android:exported="false" />
+    </application>
+
+</manifest>

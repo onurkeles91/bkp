@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "com.bestkoplayer.app-debug-4:/drawable_bg_trigger_circle.xml.flat",
+        "source": "com.bestkoplayer.app-main-6:/drawable/bg_trigger_circle.xml"
+    },
+    {
+        "merged": "com.bestkoplayer.app-debug-4:/xml_accessibility_config.xml.flat",
+        "source": "com.bestkoplayer.app-main-6:/xml/accessibility_config.xml"
+    },
+    {
+        "merged": "com.bestkoplayer.app-debug-4:/layout_activity_triggers.xml.flat",
+        "source": "com.bestkoplayer.app-main-6:/layout/activity_triggers.xml"
+    },
+    {
+        "merged": "com.bestkoplayer.app-debug-4:/layout_row_item_with_delete.xml.flat",
+        "source": "com.bestkoplayer.app-main-6:/layout/row_item_with_delete.xml"
+    },
+    {
+        "merged": "com.bestkoplayer.app-debug-4:/layout_activity_new_trigger.xml.flat",
+        "source": "com.bestkoplayer.app-main-6:/layout/activity_new_trigger.xml"
+    },
+    {
+        "merged": "com.bestkoplayer.app-debug-4:/layout_activity_main.xml.flat",
+        "source": "com.bestkoplayer.app-main-6:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.bestkoplayer.app-debug-4:/layout_activity_profiles.xml.flat",
+        "source": "com.bestkoplayer.app-main-6:/layout/activity_profiles.xml"
+    },
+    {
+        "merged": "com.bestkoplayer.app-debug-4:/layout_activity_trigger_editor.xml.flat",
+        "source": "com.bestkoplayer.app-main-6:/layout/activity_trigger_editor.xml"
+    },
+    {
+        "merged": "com.bestkoplayer.app-debug-4:/layout_activity_ocr_rule_editor.xml.flat",
+        "source": "com.bestkoplayer.app-main-6:/layout/activity_ocr_rule_editor.xml"
+    },
+    {
+        "merged": "com.bestkoplayer.app-debug-4:/layout_activity_ocr_rules.xml.flat",
+        "source": "com.bestkoplayer.app-main-6:/layout/activity_ocr_rules.xml"
+    },
+    {
+        "merged": "com.bestkoplayer.app-debug-4:/layout_activity_target_app.xml.flat",
+        "source": "com.bestkoplayer.app-main-6:/layout/activity_target_app.xml"
+    }
+]

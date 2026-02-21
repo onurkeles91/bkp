@@ -1,0 +1,78 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Geri"/>
+
+        <TextView
+            android:id="@+id/tvHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OCR Kuralı"
+            android:textSize="18sp"
+            android:paddingTop="8dp"/>
+
+        <Button
+            android:id="@+id/btnRename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Adını değiştir"/>
+
+        <Button
+            android:id="@+id/btnPickArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OCR alanı seç (sol-üst + sağ-alt)"
+            android:layout_marginTop="6dp"/>
+
+        <Button
+            android:id="@+id/btnSetThreshold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OCR eşik değeri ayarla"
+            android:layout_marginTop="6dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:text="OCR tetiklenince yapılacak işlemler"/>
+
+        <Button
+            android:id="@+id/btnAddAction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yeni tıklama noktası ekle (ekrandan seç)"/>
+
+        <ListView
+            android:id="@+id/lvActions"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kaydet"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/tvHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="İpucu: Hedef uygulamayı seç. Alan seçme başlarken uygulama otomatik öne alınır."/>
+    </LinearLayout>
+</ScrollView>

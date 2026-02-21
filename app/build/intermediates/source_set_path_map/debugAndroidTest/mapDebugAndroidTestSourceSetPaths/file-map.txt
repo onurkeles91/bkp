@@ -1,0 +1,4 @@
+com.bestkoplayer.test.app-androidTest-0 C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\build\generated\res\resValues\androidTest\debug
+com.bestkoplayer.test.app-mergeDebugAndroidTestResources-1 C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.bestkoplayer.test.app-mergeDebugAndroidTestResources-2 C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.bestkoplayer.test.app-debugAndroidTest-3 C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources

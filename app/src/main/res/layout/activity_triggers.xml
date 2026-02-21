@@ -1,0 +1,83 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Geri"/>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Trigger'lar"
+            android:textSize="18sp"
+            android:paddingStart="10dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnPickTargetApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hedef uygulama seç"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvTargetApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hedef: -"
+        android:paddingTop="4dp"/>
+
+    <Button
+        android:id="@+id/btnNewTrigger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Yeni trigger oluştur"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btnManageOcr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OCR kuralı oluştur / düzenle"
+        android:layout_marginTop="6dp"/>
+
+    <Button
+        android:id="@+id/btnStartOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Overlay'i başlat"
+        android:layout_marginTop="6dp"/>
+
+    <Button
+        android:id="@+id/btnStopOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tüm makroyu durdur / Overlay'i kapat"
+        android:layout_marginTop="6dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="Trigger Listesi"/>
+
+    <ListView
+        android:id="@+id/lvTriggers"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="6dp"/>
+</LinearLayout>

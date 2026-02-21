@@ -1,0 +1,4 @@
+#Sat Feb 21 23:18:23 TRT 2026
+base.0=C\:\\Users\\KELES\\Desktop\\ANDROID_PROJE\\bestkoplayer_v11\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\0\\classes.dex
+path.0=0/classes.dex
+renamed.0=classes.dex

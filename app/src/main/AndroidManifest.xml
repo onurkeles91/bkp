@@ -1,0 +1,67 @@
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.bestkoplayer">
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!-- Needed on Android 11+ so the target-app picker can list other installed apps (e.g., games). -->
+    <uses-permission
+        android:name="android.permission.QUERY_ALL_PACKAGES"
+        tools:ignore="QueryAllPackagesPermission" />
+
+    <!-- Additional package visibility declaration (helps on some ROMs even with QUERY_ALL_PACKAGES). -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent>
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:label="BestKoPlayer"
+        android:theme="@android:style/Theme.DeviceDefault.NoActionBar">
+
+        <activity
+            android:name=".ui.ProfilesActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+                <activity android:name=".ui.TriggersActivity" android:exported="false"/>
+
+        <activity android:name=".ui.TriggerEditorActivity" android:exported="false"/>
+
+        <activity android:name=".ui.NewTriggerActivity" android:exported="false"/>
+
+        <activity android:name=".ui.TargetAppPickerActivity" android:exported="false"/>
+
+        <activity android:name=".ui.OcrRulesActivity" android:exported="false"/>
+
+        <activity android:name=".ui.OcrRuleEditorActivity" android:exported="false"/>
+
+<service
+            android:name=".BestKoAccessibilityService"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_config"/>
+        </service>
+
+        <service
+            android:name=".overlay.TriggerOverlayService"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

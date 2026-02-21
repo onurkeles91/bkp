@@ -1,0 +1,7 @@
+com.bestkoplayer.app-pngs-0 C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\build\generated\res\pngs\debug
+com.bestkoplayer.app-resValues-1 C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\build\generated\res\resValues\debug
+com.bestkoplayer.app-packageDebugResources-2 C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.bestkoplayer.app-packageDebugResources-3 C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.bestkoplayer.app-debug-4 C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.bestkoplayer.app-debug-5 C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\src\debug\res
+com.bestkoplayer.app-main-6 C:\Users\KELES\Desktop\ANDROID_PROJE\bestkoplayer_v11\app\src\main\res

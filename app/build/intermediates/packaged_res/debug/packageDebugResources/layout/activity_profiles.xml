@@ -1,0 +1,52 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Profiller"
+        android:textSize="20sp"
+        android:paddingBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnOverlayPermission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Overlay iznini aç"
+        android:visibility="gone"/>
+
+
+    <Button
+        android:id="@+id/btnAccessibilityPermission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Erişilebilirlik iznini aç (Tıklama)"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tvAccessibilityState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="6dp"
+        android:text="Durum: -"/>
+
+    <Button
+        android:id="@+id/btnNewProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Yeni profil oluştur"
+        android:layout_marginTop="8dp"/>
+
+    <ListView
+        android:id="@+id/lvProfiles"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="10dp"/>
+</LinearLayout>

@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.bestkoplayer.app-debug-4:/values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\KELES\\Desktop\\ANDROID_PROJE\\bestkoplayer_v11\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "17",
+                        "endColumns": "49",
+                        "endOffsets": "62"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "49",
+                        "endOffsets": "100"
+                    }
+                }
+            ]
+        }
+    ]
+}

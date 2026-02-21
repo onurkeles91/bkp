@@ -1,0 +1,112 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1) Ayarlar > Erişilebilirlik > BestKoPlayer Service'i aç.\n2) Diğer uygulamaların üstüne çizme izni ver.\n3) Trigger ekle ve Overlay'i başlat."/>
+
+        <Button
+            android:id="@+id/btnOverlayPermission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Overlay iznini aç"/>
+
+        <Button
+            android:id="@+id/btnAccessibilityPermission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Erişilebilirlik iznini aç (Tıklama)"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Trigger Boyutu (px)"/>
+
+        <SeekBar
+            android:id="@+id/sbSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="260"
+            android:progress="120"/>
+
+        <TextView
+            android:id="@+id/tvSizeValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Boyut: 120px"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Trigger Opaklık (%)"/>
+
+        <SeekBar
+            android:id="@+id/sbOpacity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="40"/>
+
+        <TextView
+            android:id="@+id/tvOpacityValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Opaklık: 40%"/>
+
+        <Button
+            android:id="@+id/btnAddTrigger"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trigger ekle (ekrandan seç)"/>
+
+        <Button
+            android:id="@+id/btnUndoTrigger"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Son trigger'ı geri al"/>
+
+        <Button
+            android:id="@+id/btnAddClickPoint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Click noktası ekle (ekrandan seç)"/>
+
+        <Button
+            android:id="@+id/btnStartOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Overlay'i başlat"/>
+
+        <Button
+            android:id="@+id/btnSaveProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profili kaydet"/>
+
+        <Button
+            android:id="@+id/btnLoadProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profili yükle (Default)"/>
+
+        <TextView
+            android:id="@+id/tvState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:text="Durum: -"/>
+    </LinearLayout>
+</ScrollView>
