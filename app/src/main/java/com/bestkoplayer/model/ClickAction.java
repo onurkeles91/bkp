@@ -5,7 +5,6 @@ public class ClickAction {
     public int x;
     public int y;
     public int delayMs;
-
     public ClickAction() {}
 
     public ClickAction(int x, int y, int delayMs) {
